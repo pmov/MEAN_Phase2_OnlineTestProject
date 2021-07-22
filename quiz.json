@@ -1,0 +1,40 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Which of the following is not JavaScript Data Types?",
+      "optionA": "Float",
+      "optionB": "Undefined",
+      "optionC": "Boolean",
+      "optionD": "Number",
+      "answer": "Float"
+    },
+   {
+      "id": 2,
+      "question": "Which of the following is not Javascript frameworks or libraries?",
+      "optionA": "Jquery",
+      "optionB": "Cassandra",
+      "optionC": "Polymer",
+      "optionD": "Meteor",
+      "answer": "Cassandra"
+    },
+     {
+      "id": 3,
+      "question": "Among the following, which one is a ternary operator in JavaScript?",
+      "optionA": "#",
+      "optionB": "::",
+      "optionC": "?:",
+      "optionD": "&:",
+      "answer": "?:"
+    },
+     {
+      "id": 4,
+      "question": "Which of them is not the looping structures in JavaScript?",
+      "optionA": "for",
+      "optionB": "while",
+      "optionC": "dowhile",
+      "optionD": "forwhich",
+      "answer": "forwhich"
+    }
+  ]
+}
