@@ -1,0 +1,47 @@
+<!-- <p>view-test works!</p> -->
+<div class="headingArea">
+    <h2>Start the Online Test</h2>
+    <input type="button" value="Start Test" (click)="loadJsonData()" />
+</div>
+
+
+<div class="container">
+    <header>
+        <h1>Computer Based Test</h1>
+        <p>Test your knowledge in Javascript Fundamentals</p>
+        <div class="test-info">
+            <h5>Subject: Computer Programming</h5>
+            <h5>Duration: 15 mins</h5>
+        </div>
+    </header>
+
+    <section>
+        
+        <form #quizFormRef="ngForm" (ngSubmit)="submitAnswers(quizFormRef)">
+            <!-- Start -->
+            <div *ngFor="let q of questions">
+
+                <h3>{{q.id}}.{{q.question}}</h3>
+                <input type="radio" name={{q.id}} value="{{q.optionA}}" id="q1a" ngModel> a. {{q.optionA}} <br>
+                <input type="radio" name={{q.id}} value="{{q.optionB}}" id="q1b" ngModel> b. {{q.optionB}}<br>
+                <input type="radio" name={{q.id}} value="{{q.optionC}}" id="q1c" ngModel> c. {{q.optionC}} <br>
+                <input type="radio" name={{q.id}} value="{{q.optionD}}" id="q1d" ngModel> d. {{q.optionD}} <br>
+            </div>
+
+            <!-- End -->
+            <br /><br />
+
+            <input type="submit" value="Submit" *ngIf="showSubmitBtn" />
+
+
+        </form>
+    </section>
+    <div [ngClass]="'resultsClass'" *ngIf="submitted">
+        <h2><u>Test Results</u></h2>
+        <h3>You scored {{score}} out of {{questions.length}}</h3>
+
+        <div *ngFor="let cl of correctList">
+            <h4>{{cl}}</h4>
+        </div>
+    </div>
+</div>

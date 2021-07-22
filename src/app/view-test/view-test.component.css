@@ -1,0 +1,81 @@
+h5,h4{
+    text-align: left;
+  }
+  .container{
+      width: 60%; background: #3b3a36;
+      margin: 20px auto;
+      overflow: auto;
+      padding: 25px;
+  }
+  /*  #199fdb*/
+  header{
+      text-align: center;
+      border-bottom: white dashed 1px;
+  }
+  
+  header h1{
+      margin: 0;
+      padding:0;
+  }
+  
+  header p{
+      padding: 0;
+      margin-top: 5px;
+      color: white;
+  }
+  
+  section{
+      min-height: 400px;
+  }
+  
+  footer{
+      text-align: center;
+  }
+  
+  input[type="submit"]{
+      background: #173e43;
+      border: 1;
+      border-color: white;
+      color: #fff;
+      padding:10px 15px;
+      cursor: pointer;
+  }
+   
+  #results span{
+      color: #000;
+      font-weight: bold;
+  }
+
+  input[type="button"]{
+    background: #173e43;
+    border: 0;
+    color: #fff;
+    padding:10px 15px;
+    cursor: pointer;
+}
+
+.headingArea{
+    width: 60%; 
+    background:royalblue;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+    min-height: 100px;
+}
+
+/* #result {
+    background-color:royalblue;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+} */
+.resultsClass{
+    background-color:royalblue;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.resultsClass h2{
+    text-align: center;
+}
